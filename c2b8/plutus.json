@@ -1,0 +1,32 @@
+{
+  "preamble": {
+    "title": "son/c2b8",
+    "description": "Aiken contracts for project 'son/c2b8'",
+    "version": "0.0.0",
+    "plutusVersion": "v2",
+    "compiler": {
+      "name": "Aiken",
+      "version": "v1.0.21-alpha+unknown"
+    },
+    "license": "Apache-2.0"
+  },
+  "validators": [
+    {
+      "title": "c2b8.troubleshooting",
+      "redeemer": {
+        "title": "_datum",
+        "schema": {
+          "$ref": "#/definitions/Data"
+        }
+      },
+      "compiledCode": "51010000322253330034a229309b2b2b9a01",
+      "hash": "d8906ca5c7ba124a0407a32dab37b2c82b13b3dcd9111e42940dcea4"
+    }
+  ],
+  "definitions": {
+    "Data": {
+      "title": "Data",
+      "description": "Any Plutus data."
+    }
+  }
+}

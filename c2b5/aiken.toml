@@ -1,0 +1,14 @@
+name = "son/c2b5"
+version = "0.0.0"
+license = "Apache-2.0"
+description = "Aiken contracts for project 'son/c2b5'"
+
+[repository]
+user = "son"
+project = "c2b5"
+platform = "github"
+
+[[dependencies]]
+name = "aiken-lang/stdlib"
+version = "1.7.0"
+source = "github"
