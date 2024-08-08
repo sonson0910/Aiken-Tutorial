@@ -1,0 +1,87 @@
+{
+  "preamble": {
+    "title": "son/c5",
+    "description": "Aiken contracts for project 'son/c5'",
+    "version": "0.0.0",
+    "plutusVersion": "v2",
+    "compiler": {
+      "name": "Aiken",
+      "version": "v1.0.29-alpha+16fb02e"
+    },
+    "license": "Apache-2.0"
+  },
+  "validators": [
+    {
+      "title": "c5.contract",
+      "datum": {
+        "title": "datum",
+        "schema": {
+          "$ref": "#/definitions/c5~1Datum"
+        }
+      },
+      "redeemer": {
+        "title": "_redeemer",
+        "schema": {
+          "$ref": "#/definitions/Void"
+        }
+      },
+      "compiledCode": "5904470100003232323232323223223225333006323232323253323300c3001300d37546022602400c2a66601800429444c8c8c8c8c8c8c8c8c94ccc054ccc8894ccc0614c8ccc064c0040105288a99980c98008018a5113001002375e980103d87a800014a02944ccc00c034dd69804980b9baa0143007375c6018602e6ea8050ccc00c034dd69800980b9baa0143007375c6004602e6ea8050ccc00c034cdc199b8248008dd69804980b9baa0144832005300150d8799fd8799f581c3a4e6757f24d9dddb65c8aef60d0999957b3650453e5e7721fb4fd42ffd8799fd8799fd8799f581c32798960f1b4dc35be90add0d31aed0e3019ea0e47288296a5737e60ffffffff00153330153371e6eb8c030c05cdd500a1bae300230173754028264646464a66603266e252004300100313371290011800998020019198048009bad300e301c37540322940c004004894ccc07000452000133700900119801001180f800998008071299980b9980380098049bae300e3019375402c26600c0026eb4c00cc064dd500b0a5022323300100100322533301c00114bd7009919299980d980280109980f801198020020008998020020009810001180f0008a5114a2460346036603660366036603600246032603460346034002444646600200200844a6660340022980103d87a800013232533301953330193300900200513300800200614a0260186603a00497ae0133004004001301e002301c001223371200264a6660286012602a6ea8004520001375a6032602c6ea8004c94ccc050c024c054dd50008a6103d87a80001323300100137566034602e6ea8008894ccc064004530103d87a8000132323232533301a33722911000021533301a3371e9101000021300d3301e375000297ae014c0103d87a8000133006006003375a60360066eb8c064008c074008c06c004c8cc004004dd5980c980d180b1baa00322533301800114c103d87a800013232323253330193372291100002153330193371e9101000021300c3301d374c00297ae014c0103d87a8000133006006003375660340066eb8c060008c070008c06800488cdd79801980a1baa300330143754004600660286ea80048c0540048c008cc04cc008cc04cdd4800a5eb80cc04d300103d87a80004bd701ba5480008c048c04cc04cc04cc04c004dc3a40042940c8c8cc004004dd618089809180918091809180918091809180918071baa00522533301000114a0264a66601c66e3cdd718098010020a511330030030013013001375c600260186ea80248c03cc040c040004dd618069807180718051baa001300c0013008375400229309b2b19299980299b8748000c01800454ccc020c01c00452616163754002a66600466e1d2000300337540022646464646464646464646464a66602260280042930b1bad30120013012002375a602000260200046eb8c038004c038008dd7180600098060011bae300a001300a002375c601000260086ea8004595cd2ab9d5573caae7d5d02ba15745",
+      "hash": "580f679ff96a4101d0a83d00aab300d82af12fefcb4d806cf34a3a93"
+    }
+  ],
+  "definitions": {
+    "ByteArray": {
+      "dataType": "bytes"
+    },
+    "Int": {
+      "dataType": "integer"
+    },
+    "Void": {
+      "title": "Unit",
+      "description": "The nullary constructor.",
+      "anyOf": [
+        {
+          "dataType": "constructor",
+          "index": 0,
+          "fields": []
+        }
+      ]
+    },
+    "c5/Datum": {
+      "title": "Datum",
+      "anyOf": [
+        {
+          "title": "Datum",
+          "dataType": "constructor",
+          "index": 0,
+          "fields": [
+            {
+              "title": "policyID",
+              "$ref": "#/definitions/ByteArray"
+            },
+            {
+              "title": "assetName",
+              "$ref": "#/definitions/ByteArray"
+            },
+            {
+              "title": "seller",
+              "$ref": "#/definitions/ByteArray"
+            },
+            {
+              "title": "author",
+              "$ref": "#/definitions/ByteArray"
+            },
+            {
+              "title": "price",
+              "$ref": "#/definitions/Int"
+            },
+            {
+              "title": "royalties",
+              "$ref": "#/definitions/Int"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
